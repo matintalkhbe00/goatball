@@ -69,11 +69,11 @@ async function fetchMissionsForTokens(): Promise<void> {
         if (actionResponse.ok) {
           console.log(`Action executed for mission ID: ${missionId} (phone: ${phone})`);
         } else {
-          console.error(`Failed to execute action for mission ID: ${missionId} (phone: ${phone})`);
+          console.log(`Failed to execute action for mission ID: ${missionId} (phone: ${phone})`);
         }
       }
     } catch (error) {
-      console.error(`Error for phone ${phone}:`, error);
+      console.log(`Error for phone ${phone}:`, error);
     }
   }
 }
